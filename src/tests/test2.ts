@@ -1,9 +1,10 @@
+import 'dotenv/config';
 import { Command, StringOption, UserOption } from "../Commands";
 import { CommandInteraction, Intents } from "discord.js";
 import DiscordBot from "../DiscordBot";
 
 console.log("Building bot...");
-const bot = new DiscordBot([Intents.FLAGS.DIRECT_MESSAGES], "OTcxNjA2NDM4NTI5MDkzNzIy.YnM9Ag.ULRnT9DbVzKNVMaINN5o7jM9hiE");
+const bot = new DiscordBot([Intents.FLAGS.DIRECT_MESSAGES], process.env.BOT_TOKEN!);
 
 let command = new Command("poke", "Poke somebody");
 command.addOption(new UserOption("target", true, "Who to poke"));
