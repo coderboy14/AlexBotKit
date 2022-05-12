@@ -1,4 +1,4 @@
-import { Command } from 'Commands';
+import { Command } from './Commands';
 import { CacheType, Client, CommandInteraction, Intents, Interaction, OAuth2Guild } from 'discord.js';
 
 type CommandCallbackMethod = (interaction: CommandInteraction) => void;

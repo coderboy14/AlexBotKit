@@ -4,6 +4,7 @@ import { CommandInteraction, Intents } from "discord.js";
 import DiscordBot from "../DiscordBot";
 
 console.log("Building bot...");
+console.log(`::TOKEN::\n${process.env.BOT_TOKEN!}\n`)
 const bot = new DiscordBot([Intents.FLAGS.DIRECT_MESSAGES], process.env.BOT_TOKEN!);
 
 let command = new Command("poke", "Poke somebody");

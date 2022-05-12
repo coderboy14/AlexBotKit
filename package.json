@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "test": "test"
+    "build": "npx tsc",
+    "test2": "npm run build && (cd dist && node tests/test2)"
   },
   "repository": {
     "type": "git",
-    "url": "git"
+    "url": "https://github.com/coderboy14/AlexBotKit"
   },
   "author": "Alex Wolfe",
-  "license": "ISC",
+  "license": "GPL-3.0-or-later",
   "devDependencies": {
     "typescript": "^4.6.4"
   },
