@@ -1,6 +1,6 @@
 {
   "name": "alexbotkit",
-  "version": "1.0.0",
+  "version": "0.0.3-alpha",
   "description": "",
   "main": "index.ts",
   "scripts": {
@@ -22,5 +22,8 @@
     "discord-api-types": "^0.32.1",
     "discord.js": "^13.6.0",
     "dotenv": "^16.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/coderboy14/AlexBotKit/issues"
   }
 }
